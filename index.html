@@ -1,0 +1,680 @@
+
+
+
+<html>
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Theo Ellin Ballew</title>
+    <link rel="shortcut icon" href="Naked2.ico"/> 
+      <meta name="description" content="Theo Ellin Ballew (b. 1993, deepest known matronym Srebrna or Silver) writes short fictional poetic prose, some of which they code to move. They teach or have taught computational art/poetry at RISD, NYU Tisch, and Brown.">
+<!-- THE PROBLEM:  NEEDS TO AUTODIRECT TO HTTPS : -- OR ELSE AN ERROR MESSAGE COMES UP... prob need to do this through domain.com ugh -->    
+<!-- 
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+ -->
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>   
+        
+         <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script>
+// alert ("All text is inside the rocks.");     
+// alert ("Drag screen to change your view. Use arrow keys to move."); 
+
+
+//   AFRAME.registerComponent('navigate-on-click', {
+//     schema: {
+//       url: {default: ''}
+//     },
+// 
+//     init: function () {
+//       var data = this.data;
+//       var el = this.el;
+// 
+//       el.addEventListener('click', function () {
+//         window.location.href = data.url;
+//       });
+//     }
+//   });  
+
+
+
+    </script>
+          
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+<script>    
+	$(document).ready(function() {
+    
+    $("#confused").click(function(){
+	$("#clicked").toggle();
+	}); 
+	
+	$("#clicked").click(function(){
+	$("#clicked").hide();
+	}); 
+	
+	
+	
+	});
+	
+	</script>
+    
+    
+    <style>
+    
+    html{
+    background-color:#8c7b7b; 
+    }
+    .static {
+    font-family: 'Roboto', sans-serif;
+    position: fixed; 
+    font-size: 1.2vw; 
+    z-index: 10; 
+	opacity: .6; 
+/* 
+    color: white; 
+    text-shadow: 1px 1px 5px #800053;  
+    text-align: center;
+ */
+    }
+    
+    #confused {
+    top:0vh; 
+    left:0vw; 
+	text-align: center; 
+	width: 100vw; 
+    }
+    
+    #clicked {
+    top: 4.8vh; 
+    left: 35vw; 
+    width:30vw; 
+    display:none; 
+    text-align: justify; 
+    font-size: 1.2vw; 
+    }
+
+	#contact {
+	bottom: 0vh; 
+	left: 0vw;
+	text-align: center; 
+	width: 100vw; 
+	}
+	
+	a {
+	color: black; 
+	}
+	
+	a:visited {
+	color: black; 
+	}
+
+	a:hover {
+	border-top: 3px dotted black; 
+	}
+		#here:hover {
+		border-bottom: 3px dotted black; 
+	}	
+	
+	
+	.cell {
+	font-family: Helvetica, serif; 
+    position: fixed; 
+    font-size: 15px; 
+    z-index: 10; 
+	opacity: .6; 
+	display:none; 
+	left: 20vw;
+	top: 15vh;  
+	width: 60vw; 
+	}
+		
+
+				
+@media only screen and (max-width: 900px) {
+
+.cell {
+display: inline; 
+}
+
+	a:hover {
+	border-bottom: 3px dotted black; 
+	border-top: none; 
+	}
+	
+.static {
+display: none; 
+}
+
+
+}
+	
+    </style>
+  </head>
+  <body>
+  
+  <div class=static id=confused>
+ Use the arrow keys to move your body and drag the screen to move your head. The text and links are inside the rocks. <br>You may be taken to a link without clicking on it.<br>
+  Click <span id=here><u>here</u></span> if you are confused.</div>
+  <div class=static id=clicked><br><br>To go into a rock and see the text/links within it: drag your screen till a rock (or floating dodecahedron) is centered, use your upward arrow key to move toward the rock, and keep going till the rock disappears.</div>
+    
+    <div class=static id=contact>Email me: theo@oral.pub.
+</div>
+
+<div class=cell>This site is not optimized for mobile.</div> 
+    
+    <a-scene>
+<!-- 
+      <a-camera>
+    <a-cursor color="white"></a-cursor>
+  </a-camera>
+ -->
+    <a-camera wasd-controls="acceleration: 9">
+    <a-cursor color="white"></a-cursor>
+  </a-camera>
+
+
+        	
+    	  <a-entity 
+  text="value: THEO  ELLIN  BALLEW;
+      color: black; 
+      width: 3000; 
+      opacity:.15;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="150 10 -60" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+
+<!--     	ABOUT -->
+    	
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-3 1.5 -3" 
+    	rotation="30 60 60" 
+    	scale="1 1 1" 
+    	></a-dodecahedron>
+
+    		
+    	<a-entity
+      text="value: Theo Ellin Ballew (b. 1993, deepest known matronym Srebrna or Silver) writes fictional poetry, some of which they code to move. They teach or have taught computational art/poetry at NYU Tisch (Interactive Telecommunications Program), Rhode Island School of Design (Digital + Media), Brown University (Digital Language Arts, Literatary Arts), The New School: Parsons (Communication Design), and elsewhere. They are also the founder and director of ORAL.pub. Theo has gone home to Los Angeles, Baltimore, Cincinnati, Scottsdale, Tempe, Fresno, Phoenix, Salt Lake City, New Haven, Cambridge, Dallas, Brooklyn, Denver, Mexico City, and Providence, in roughly that order. They currently live in Brooklyn.; 
+      color: white; 
+      width: 9; 
+      anchor: center;
+      opacity: .9;
+      wrap-count: 51;"
+      position="-3 1.5 -3"
+      rotation="15 60 0"
+      scale=".15 .15 .15"
+      ></a-entity>
+      
+
+<!-- FRONT LOWER -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-3 1.5 -15" 
+    	rotation="90 30 30" 
+    	scale="1 1 1" 
+    	></a-dodecahedron>
+    	
+<a-link href="http://oral.pub/TheFrontLowerPartofYourNeck/" 
+  <a-entity 
+  text="value: &quot;The Front Lower Part of Your Neck.&quot; Website. Originally an installation in Yeah Maybe gallery (Minneapolis, MN) in November 2017.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-3 1.5 -15" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+      
+    
+<!-- JUKED -->
+    	
+		<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="9 1.5 -6" 
+    	
+    	scale="1 1 1"
+    	></a-dodecahedron>
+
+    	
+    	<a-link href="http://www.juked.com/2018/10/theo-ellin-ballew-two-shorts.asp" 
+  <a-entity 
+  text="value: &quot;Bird&quot; and &quot;Sea Pussy.&quot; Oct 2018 in Juked.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="9 1.5 -6" 
+      rotation="0 -60 0" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+      
+      
+<!--       3AM -->
+    	
+    	
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="1.5 1.5 -9" 
+    	rotation="60 180 60" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    <a-link href="https://www.3ammagazine.com/3am/picaro-other-poems/" 
+  <a-entity 
+  text="value: &quot;Picaro,&quot; &quot;Romance,&quot; and &quot;Travel Writing.&quot; April 2018 in 3AM.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="1.5 1.5 -9" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+<!--     	BLISTER SKIN -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-9 1.5 -6" 
+    	rotation="180 60 60" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://oral.pub/SoB/" 
+  <a-entity 
+  text="value: &quot;Blister Skin.&quot; ELO Conference (Cork, Ireland). July 2019. Interactive website housed online, displayed via video.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-9 1.5 -6" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+      
+      
+      
+      
+<!--     	MOON DRAWN -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="7.5 1.5 -12" 
+    	rotation="0 60 90" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://oral.pub/MoonDrawn/" 
+  <a-entity 
+  text="value: &quot;Moon Drawn&quot; and...;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="7.5 1.8 -12" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+      
+      
+          <a-link href="http://oral.pub/Lunacorrida/" 
+  <a-entity 
+  text="value: &quot;Luna corrida&quot; with Mabe Fratti, translated into Spanish by Mariana Rodr&iacute;guez. Websites. ORAL PUB. April 2018.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="7.5 1.2 -12" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+      
+      
+      
+      
+      
+    <br><br>
+      
+      
+      
+<!--     	BEFORE THE BELLY -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-3 1.5 -6" 
+    	rotation="180 180 90" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="https://oral.pub/Belly.html" 
+  <a-entity 
+  text="value: &quot;Before the Belly.&quot; Not yet shown/in progress.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-3 1.5 -6" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+      
+      
+      
+<!--     	INNER SIDES -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-4.5 1.5 -7.5" 
+    	rotation="180 180 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://oral.pub/IS/" 
+  <a-entity 
+  text="value: &quot;Inner Sides.&quot; Not yet shown/in progress.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-4.5 1.5 -7.5" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+<!-- GURGLING -->
+
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="7.5 1.5 -9" 
+    	rotation="60 60 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://oral.pub/GurglingBirdYouGo/" 
+  <a-entity 
+  text="value: &quot;Gurgling Bird You Go.&quot; ;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="7.5 1.8 -9" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+    <a-link href="http://oral.pub/GurglingBirdYouGo/Clock.html" 
+  <a-entity 
+  text="value: &quot;En el a&ntilde;o me resbalo.&quot; Translated by author in collaboration with Rodrigo Echeverr&iacute;a and Mar&iacute;a Cristina Fern&aacute;ndez Hall. Website. Spanish iteration shown in Bandini art space (Mexico City, Mexico) in April 2018. ;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="7.5 1.2 -9" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+<!--     	ORAL -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-12 1.5 -3" 
+    	rotation="180 60 60" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://oral.pub/" 
+  <a-entity 
+  text="value: ORAL PUB founder and director.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-12 1.5 -3" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+<!--     	POND-->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="3 1.5 -12" 
+    	rotation="60 180 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://oral.pub/POND/" 
+  <a-entity 
+  text="value: Web concept and construction of POND, published in Tagvverk's TEMP series.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="3 1.5 -12" 
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+
+<!--     	LITRO -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-21 1.5 -3" 
+    	rotation="180 60 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="https://www.litro.co.uk/2018/01/dictator/" 
+  <a-entity 
+  text="value: &quot;Dictator.&quot; January 2018 in Litro.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-21 1.5 -3" 
+      rotation="0 60 0"
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+
+
+
+<!--     	PIF -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="-12 1.5 -21" 
+    	rotation="180 180 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="https://www.pifmagazine.com/2017/09/when-the-walls-tipped-in/" 
+  <a-entity 
+  text="value: &quot;When the Walls Tipped In&quot; and... ;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-12 1.8 -21" 
+      rotation="0 60 0"
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+    <a-link href="https://www.pifmagazine.com/2017/09/if-all-hallways-were-2-feet-wide/" 
+  <a-entity 
+  text="value: &quot;If All Hallways Were 2&apos;-Wide.&quot; September 2017 in Pif Magazine.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="-12 1.2 -21" 
+      rotation="0 60 0"
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+
+<!--     	FOX -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="15 1.5 -12" 
+    	rotation="180 180 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="http://theo.land/work/fox/" 
+  <a-entity 
+  text="value: &quot;3662,&quot; &quot;3939,&quot; and &quot;3862.&quot; in Where Does the Light Come From in a Painting (a book on the paintings of Fox Hysen). July 2017.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="15 1.5 -12" 
+      rotation="0 -60 0"
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+<!--     	GWLADYS -->
+    	<a-dodecahedron 
+    	src="https://i.imgur.com/NgHUi2U.jpg" 
+    	position="12 1.5 -18" 
+    	rotation="180 180 180" 
+    	scale="1 1 1"
+    	></a-dodecahedron>
+    	
+    	    	
+    <a-link href="https://www.ik-projects.com/post/gwladys-alonzo-la-mitad-que-nunca-existio" 
+  <a-entity 
+  text="value: Text for Gwladys Alonzo's show, &quot;La mitad que nunca existi&oacute;.&quot; IK Projects (Lima, Peru). March 2019.;
+      color: black; 
+      width: 9; 
+      opacity:.6;
+      anchor: center;
+      align: left;
+      wrap-count: 51;"
+      position="12 1.5 -18" 
+      rotation="0 -60 0"
+      scale=".15 .15 .15"
+      link="">
+       </a-entity>
+      </a-link>
+
+
+    	
+<!-- 
+LANDSCAPE    	<a-dodecahedron 
+    	position="18 9 -15" 
+    	rotation="30 90 90" 
+    	scale="18 9 3" 
+		></a-dodecahedron>
+
+    	<a-dodecahedron 
+    	position="-8 12 -19" 
+    	rotation="30 0 90" 
+    	scale="21 3 6" 
+		></a-dodecahedron>
+
+ 	   	<a-dodecahedron 
+    	position="-15 12 -19" 
+    	rotation="90 30 180" 
+    	scale="15 3 3" 
+		></a-dodecahedron>
+ -->
+
+
+
+    <a-entity environment="preset: yavapai; dressingAmount: 3; seed: 6; groundColor:  #6fff00; fog: .6; skyColor: white"></a-entity>
+<!-- 
+    
+<a-plane rotation="-112 0 0" width="30" height="15" color="black" position="0 0 -1"></a-plane>
+ -->
+<!-- 
+
+<a-plane rotation="-90 0 0" width="30" height="9" color="black" ></a-plane>
+ -->
+
+<!-- #d3ffad 
+#11381b  
+-->
+<!-- 
+ground colors
+#adcaf7
+ -->
+
+    </a-scene>
+    
+    
+    
+    
+  </body>
+</html>
